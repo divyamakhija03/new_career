@@ -1,0 +1,128 @@
+body {
+    overflow-x: hidden;
+} 
+.backgroundimg{
+    background-image: url(../../assets/images/img7.png);
+    /* background-size: cover;  */
+     /* background-position: center center; */
+     background-repeat: no-repeat;  
+     height: 25rem;
+     margin: 20px;
+     /* width: 100%; */
+     border-radius: 20px;
+     image-rendering: crisp-edges;
+     border: 1px black dashed;
+    
+     /* background-color: brown;
+     */
+    
+}
+#features {
+    position: relative;
+    padding-top: 20px;
+    
+  }
+  
+  .feature-title {
+    font-size: 20px;
+    color: rgb(238, 123, 123);
+    text-transform: capitalize;
+    font-weight: 800;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .feature-box {
+    padding-top: 3.5%;
+    padding-bottom: 3.5%;
+    padding-left: 100px;
+  }
+  
+  .icon {
+    color:rgb(238, 123, 123);
+    margin-bottom: 1rem;
+    margin-left: 60px;
+   
+  }
+  
+  .icon:hover {
+    color:  rgb(37, 37, 37);
+  }
+  #first-row{
+    /* background-color: #371B58; */
+    border: solid black 5px;
+    border-radius: 10px;
+    background: linear-gradient( #E8CBC0, #636FA4); 
+    
+
+  }
+  #para1{
+    font-size: large;
+    
+    
+
+  }
+  testimonials {
+    background-color: #4C3575;
+  }
+  
+  .testimonial-text {
+    font-size: 3rem;
+    line-height: 1.5;
+  }
+  
+  .testimonial-image {
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
+  }
+  .quote{
+    height: 120px;
+    background-color:  rgba(58, 151, 151, 0.692);
+    text-align: center;
+    padding-top: 20px;
+    border-radius: 60px;
+    font-size: x-large;
+    font-weight: 600;
+    color: white;
+  }
+  #pricing {
+  padding: 100px;
+  
+}
+
+.price-text {
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+.pricing-column {
+  padding: 3% 2%;
+  
+}
+.card{
+  border: black 3px solid;
+}
+.card-header{
+  background-color: black;
+  color: aliceblue;
+}
+
+ #footer{
+  background-color: #5B4B8A;
+  
+ }
+
+
+.social-icon {
+  margin: 20px 10px;
+  
+}
+.first-sec{
+  text-align: center;
+  font-size: x-large;
+}
+/* .first-card{
+ 
+} */
+
+  
