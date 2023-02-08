@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { LoginComponent } from './login/login.component';
+
 import { HomeComponent } from './home/home.component';
 import { CollegeComponent } from './college/college.component';
 import { DemoComponent } from './demo/demo.component';
@@ -15,12 +15,17 @@ import { CommerceComponent } from './commerce/commerce.component';
 import { ArtsComponent } from './arts/arts.component';
 import { QuizComponent } from './quiz/quiz.component';
 import { BackgroundDirective } from './background.directive';
-import { SigninComponent } from './signin/signin.component';
+import { TestsModule } from './tests/tests.module';
+import { ReactiveFormsModule } from '@angular/forms';
+import { AuthenticationModule } from './authentication/authentication.module';
+
+
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent,
     HomeComponent,
     CollegeComponent,
     DemoComponent,
@@ -30,13 +35,18 @@ import { SigninComponent } from './signin/signin.component';
     ArtsComponent,
     QuizComponent,
     BackgroundDirective,
-    SigninComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     SharedModule,
     NgbModule,
+    TestsModule,
+    ReactiveFormsModule,
+    AuthenticationModule
+   
+  
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

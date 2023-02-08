@@ -2,15 +2,19 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ArtsComponent } from './arts/arts.component';
+import { LoginComponent } from './authentication/login/login.component';
+import { ProfileComponent } from './authentication/profile/profile.component';
+import { RegisterComponent } from './authentication/register/register.component';
 import { BlogComponent } from './blog/blog.component';
 import { CollegeComponent } from './college/college.component';
 import { CommerceComponent } from './commerce/commerce.component';
 import { DemoComponent } from './demo/demo.component';
 import { HomeComponent } from './home/home.component';
-import { LoginComponent } from './login/login.component';
+
 import { QuizComponent } from './quiz/quiz.component';
 import { ScienceComponent } from './science/science.component';
-import { SigninComponent } from './signin/signin.component';
+
+import { EasyComponent } from './tests/easy/easy.component';
 
 
 const routes: Routes = [
@@ -22,9 +26,12 @@ const routes: Routes = [
   {path:'arts',component:ArtsComponent},
   {path:'demo',component:DemoComponent},
   {path:'quiz',component:QuizComponent},
-  {path:'login',component:LoginComponent},
-  {path:'signin',component:SigninComponent},
+  {path:'easy',component:EasyComponent},
+  {path:'register',component:RegisterComponent},
+  {path:'login',component:LoginComponent}, 
+  {path:'profile',component:ProfileComponent},
   {path:'',redirectTo:"home",pathMatch:"full"},
+  
 
 ];
 
@@ -32,6 +39,7 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes),
             CommonModule,],
   exports: [RouterModule],
+  
   
 })
 export class AppRoutingModule { }

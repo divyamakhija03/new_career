@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="container-fluid g-0">
-    <nav class="navbar navbar-expand navbar-light bg-dark"  id="header">  
+    <nav class="navbar navbar-expand navbar-light bg-dark"   id="header">  
         <!-- navbar-dark bg-dark px-2 -->
             <div class="side-nav-button p-2 me-3 text-light">
                 <i class="fa fa-bars" aria-hidden="true"></i>
@@ -48,7 +48,7 @@
                     <a href="" class="nav-link" style=" text-decoration:none;" routerLink="/college" routerLinkActive="current">Colleges</a>
                   </div>
                   <div ngbDropdown class="px-2">
-                    <button type="button" class="btn btn-outline-dark bg-dark" style="color: white;font-size: large;" id="dropdownBasic1" ngbDropdownToggle>
+                    <button type="button" class="btn" style="color: white;font-size: large;" id="dropdownBasic1" ngbDropdownToggle>
                         Resources
                     </button>
                     <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
@@ -58,12 +58,15 @@
                     
                     </div>
                   </div>
+                  <div class="px-2 bar">
+                    <a href="" class="nav-link" style="text-decoration:none;" routerLink="/profile" routerLinkActive="current">View Profile</a>
+                  </div>
 
                   <div class="px-2 bar">
-                    <a href="" class="nav-link" style="text-decoration:none;" routerLink="login/" routerLinkActive="current">Log in</a>
+                    <a href="" class="nav-link" style="text-decoration:none;" routerLink="/login" routerLinkActive="current">Log in</a>
                   </div>
                   <div class="px-2 bar">
-                    <a href="" class="nav-link" style=" text-decoration:none;" routerLink="/signin" routerLinkActive="current">Sign Up</a>
+                    <a href="" class="nav-link" style=" text-decoration:none;" routerLink="/register" routerLinkActive="current">Sign Up</a>
                   </div>
                   
                   <!-- <div class="app-side-nav" class="black-border">

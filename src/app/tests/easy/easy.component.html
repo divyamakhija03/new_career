@@ -1,0 +1,76 @@
+<div class="m-5 p-5">
+  <div class="col-md-3">
+    <div class="card" style="margin-top: 10px;border: white;">
+        <div class="card-body">
+          <b>Quiz will automatically submitted when timer reaches to 0 sec</b>
+          <h1>{{getFormattedTime()}}</h1>
+        </div>
+        <!-- <div class="spinner-border text-secondary" role="status" style="color: aliceblue;margin: auto;" >
+          <span class="visually-hidden">Loading...</span>
+        </div> -->
+  </div>   
+  </div>  
+        <div class="bootstrap-wrapper " *ngIf="!isSubmit">
+                     <div *ngFor="let cat of category">
+                      <h5 class="display-5 text-center" style="text-transform: uppercase;">{{cat.Cname}}</h5>   
+                      <div *ngFor="let q of data; let i = index">
+                      <div class="container my-5" *ngIf="q.Cname==cat.Cname">
+                          <div class="col">
+                              <h3 id="questionBox" >
+                                {{q.ques}}
+                              </h3>
+                          </div>
+                          <div class="col box">
+                              <input  type="radio" name="{{i}}" [value]="q.option1"   [(ngModel)]="q.givenAns" >
+                              <label for="first">{{q.option1}}</label>
+                          </div>
+                          <div class="col box">
+                              <input  type="radio" name="{{i}}" [value]="q.option2"   [(ngModel)]="q.givenAns">
+                              <label for="second">{{q.option2}}</label>
+                          </div>
+                          <div class="col box">
+                              <input  type="radio" name="{{i}}" [value]="q.option3"   [(ngModel)]="q.givenAns" >
+                              <label for="third">{{q.option3}}</label>
+                          </div>
+                          <div class="col box">
+                              <input type="radio" name="{{i}}" [value]="q.option4"   [(ngModel)]="q.givenAns">
+                              <label for="fourth">{{q.option4}}</label>
+                          </div>
+                        </div>
+                      </div>
+                      </div>
+                      <button id="submit" (click)="submitQuiz()">Submit</button>
+                    
+            </div>
+          </div>   
+ 
+
+                <div class="bootstrap-wrapper" *ngIf="isSubmit">
+                    <div>hello</div>
+                                <div class="row">
+                                  <div class="col-md-6 offset-md-3">
+                                    <div class="card">
+                                        <h5 class="card-title">Quiz result</h5>
+                                        <div class="card-body text-center">
+                                            <h1>Logical reasoning Marks Got : {{ Logical_Reasoning }}</h1>
+                                            <h1>abstract reasoning Marks Got : {{  abstract_reasoning }}</h1>
+                                            <h1>numerical reasoning Marks Got : {{ Numerical_Reasoning }}</h1>
+                                            <h1>general reasoning Marks Got : {{  General_Aptitude }}</h1>
+                                            <h1>total Marks Got : {{  correctAnswers }}</h1>
+                                           
+ 
+                                            <!-- <h1>Correct Answers : {{ correctAnswers }} / {{data.length}}</h1>
+                                            <h1>Questions Attempted :{{ attempted }}</h1> -->
+                                            <button color="primary">Print</button>
+                                        </div>
+                                      </div>
+                                </div>
+                              </div>
+                              </div>
+
+
+
+                              
+                      
+          
+          
